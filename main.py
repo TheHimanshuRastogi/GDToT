@@ -14,7 +14,7 @@ async def start(bot, message):
 @bot.on_message(filters.command('gdtot'))
 async def GDToT(bot, message):
     try:
-        await message.reply(helper.getGDToT(helper.getProperLink(message.commanad[1])))
+        await message.reply(helper.getGDToT(helper.getProperLink(message.command[1])))
     except Exception as e:
         await message.reply(f"**Traceback Info:**\n`{traceback.format_exc() }`\n**Error Text:**\n`{e}`")
         
