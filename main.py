@@ -1,5 +1,5 @@
 import helper, traceback
-from pyrogram import Client
+from pyrogram import Client, filters
 
 bot = Client("Bot",
    api_id=11781837,
