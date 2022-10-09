@@ -11,7 +11,7 @@ bot = Client("Bot",
 async def start(bot, message):
     await message.reply("Hey, I'm Alive.") 
     
-@user.on_message(filters.command('gdtot'))
+@bot.on_message(filters.command('gdtot'))
 async def GDToT(bot, message):
     try:
         await message.reply(helper.getGDTo(helper.getProperLink(message.commanad[1])))
