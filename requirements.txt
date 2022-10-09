@@ -1,0 +1,4 @@
+TgCrypto
+Selenium
+Pyrogram==2.0.55
+undetected-chromedriver
